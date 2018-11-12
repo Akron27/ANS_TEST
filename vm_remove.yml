@@ -1,7 +1,11 @@
 - hosts: localhost
   connection: local
   tasks:
+<<<<<<< HEAD
     - name: Remove a resource created by vm.yml
+=======
+    - name: Remove a resource created in vm.yml
+>>>>>>> 3711acdcea048b64c276d19b51beefb673212a0c
       azure_rm_resourcegroup:
         name: table4ds1
         state: absent

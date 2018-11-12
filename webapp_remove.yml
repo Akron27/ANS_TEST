@@ -1,0 +1,8 @@
+- hosts: localhost
+  connection: local
+  tasks:
+  - name: Remove a resource created by vm.yml
+    azure_rm_resourcegroup:
+      name: table4ds1webapp
+      state: absent
+      force: true
