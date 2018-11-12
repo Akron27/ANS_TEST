@@ -54,7 +54,8 @@
       ssh_password_enabled: false
       ssh_public_keys:
         - path: /home/azureuser/.ssh/authorized_keys
-          key_data: {{ lookup('file','/home/azureops/.sshid_rsa.pub') }}
+          key_data: |
+           {{ lookup('file','/home/azureops/.sshid_rsa.pub') }}
       network_interfaces: table4ds1Nic
       image:
         offer: UbuntuLTS
