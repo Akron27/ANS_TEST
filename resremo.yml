@@ -6,3 +6,4 @@
       azure_rm_resourcegroup:
         name: table4ds1vmrg
         state: absent
+        force: true
