@@ -1,2 +1,5 @@
-host1 ansible_host=137.116.150.154 ansible_user=azureops
 host2 ansible_host=137.116.151.196 ansible_user=azureops
+host1 ansible_host=137.116.150.154 ansible_user=azureops
+
+[web]
+host1
