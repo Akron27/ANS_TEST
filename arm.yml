@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: yes
+  tasks:
+    - name: Arm deploy
+      azure_rm_deployment:
+        state: present
+        resource_group_name: table4dswebapp
+        location: southeastasia
+        template_link: 'https://raw.githubusercontent.com/Dinu21/WebApp/master/template.json'
+        parameters_link: 'https://raw.githubusercontent.com/Dinu21/WebApp/master/parameters.json' 
